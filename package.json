@@ -25,6 +25,7 @@
   "homepage": "https://github.com/gabhi/gabhi-node-js-open-source-server",
   "dependencies": {
     "express": "^4.4.2",
-    "nconf": "^0.6.9"
+    "nconf": "^0.6.9",
+    "log4js": "^0.6.14"
   }
 }

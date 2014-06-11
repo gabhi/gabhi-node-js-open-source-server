@@ -7,6 +7,10 @@ var config = require('nconf').argv().env().file({
 var port = process.env.PORT || config.get("PORT");
 var express = require('express');
 var cluster_mode_enabled = config.get("CLUSTER_MODE");
+var log4js = require('log4js');
+var logger = log4js.getLogger();
+
+log4js.configure('./config/log4js.json', {});
 
 
 // Code to run if we're in the master process
@@ -23,7 +27,7 @@ if (cluster.isMaster && cluster_mode_enabled) {
     cluster.on('exit', function(worker) {
 
         // Replace the dead worker, we're not sentimental
-        console.log('Worker ' + worker.id + ' died :(');
+        logger.debug('Worker ' + worker.id + ' died :(');
         cluster.fork();
 
     });
@@ -35,5 +39,5 @@ if (cluster.isMaster && cluster_mode_enabled) {
 
     // Bind to a port
     app.listen(port);
-    console.log("listening on port " + port);
+    logger.debug("listening on port " + port);
 }

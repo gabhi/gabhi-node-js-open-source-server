@@ -1,3 +1,4 @@
+require('look').start();
 // Include the cluster module
 var cluster = require('cluster');
 var config = require('nconf').argv().env().file({

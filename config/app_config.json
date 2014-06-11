@@ -6,5 +6,20 @@
     "PROFILER": {
         "PORT": "5959",
         "HOST": "localhost"
+    },
+    "THROTTLESETTINGS": {
+        "urlCount": 15,
+        "urlSec": 1,
+        "holdTime": 10,
+        "whitelist": {
+            "127.0.0.1": false
+        },
+        "errorCode": 403,
+        "errorHtml": "<html><title>403 Forbidden</title><body><h1>403 Forbidden</h1><p>Client denied by server configuration.</p></body></html>"
+    },
+    "ACCESS_CONTROL": {
+        "ALLOW_ORIGIN": "*",
+        "ALLOW_METHODS": "GET, POST, OPTIONS, DELETE, PUT",
+        "ALLOW_HEADERS": "X-Requested-With, Content-Type, AuthId"
     }
 }

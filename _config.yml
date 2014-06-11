@@ -1,0 +1,10 @@
+# Site settings
+title: Node js Server
+email: gaikwad.abhijit@gmail.com
+description: "Simple Node js server"
+baseurl: "http://gabhi.github.io/"
+url: "http://gabhi.github.io/gabhi-node-js-open-source-server/"
+
+# Build settings
+markdown: kramdown
+permalink: :title

@@ -1,9 +1,12 @@
-require('look').start();
-// Include the cluster module
-var cluster = require('cluster');
 var config = require('nconf').argv().env().file({
     file: './config/app_config.json'
 });
+var PROFILER = config.get("PROFILER");
+
+require('look').start(PROFILER.PORT, PROFILER.HOST);
+// Include the cluster module
+var cluster = require('cluster');
+
 
 var port = process.env.PORT || config.get("PORT");
 var express = require('express');

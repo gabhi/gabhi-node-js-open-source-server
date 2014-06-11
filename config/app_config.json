@@ -2,5 +2,9 @@
     "TITLE": "Node Server Demo",
     "PORT": "3000",
     "NODE_ENV": "development",
-    "CLUSTER_MODE": true
+    "CLUSTER_MODE": true,
+    "PROFILER": {
+        "PORT": "5959",
+        "HOST": "localhost"
+    }
 }

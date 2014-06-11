@@ -1,0 +1,6 @@
+{
+    "title":"Node Server Demo",
+    "PORT":"3000",
+    "NODE_ENV":"development",
+    "CLUSTER_MODE" : true
+}

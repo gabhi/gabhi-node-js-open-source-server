@@ -1,0 +1,30 @@
+{
+  "name": "gabhi-node-js-open-source-server",
+  "version": "0.0.0",
+  "description": "Simple Node js server",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabhi/gabhi-node-js-open-source-server.git"
+  },
+  "keywords": [
+    "nodejs",
+    "server",
+    "express",
+    "cpu",
+    "profiler"
+  ],
+  "author": "Abhijit Gaikwad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabhi/gabhi-node-js-open-source-server/issues"
+  },
+  "homepage": "https://github.com/gabhi/gabhi-node-js-open-source-server",
+  "dependencies": {
+    "express": "^4.4.2",
+    "nconf": "^0.6.9"
+  }
+}

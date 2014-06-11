@@ -2,11 +2,18 @@ var config = require('nconf').argv().env().file({
     file: './config/app_config.json'
 });
 var PROFILER = config.get("PROFILER");
-
 require('look').start(PROFILER.PORT, PROFILER.HOST);
 // Include the cluster module
 var cluster = require('cluster');
+var i18n = require("i18n");
+i18n.configure({
+    locales: ['en', 'fr'],
+    directory: __dirname + '/locales'
+});
+i18n.setLocale('en');
 
+var greeting = i18n.__('Hello');
+console.log(greeting);
 
 var port = process.env.PORT || config.get("PORT");
 var express = require('express');

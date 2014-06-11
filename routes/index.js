@@ -1,6 +1,6 @@
+var sample_route_impl = require("./sample_route_impl");
+
 module.exports = function(app) {
 
-    app.get("/", function(req, res) {
-        res.send("Your Awsome Node js server is running!");
-    });
+    app.get("/", sample_route_impl.getRoot);
 };

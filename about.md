@@ -22,7 +22,4 @@ published: true
 10. CORS support
 11. Cluster support
 12. HTTPS support
-
-
-
-
+13. Internationlization support

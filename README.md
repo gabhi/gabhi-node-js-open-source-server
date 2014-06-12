@@ -10,6 +10,9 @@ npm install
 
 node app.js
 
+then visit http://localhost:3000 to see the server in action 
+or visit http://localhost:5959 to see profiler in action
+
 ## Simple Node js server.
 
 ### Features
